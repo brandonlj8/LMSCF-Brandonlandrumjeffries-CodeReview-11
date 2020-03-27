@@ -6,7 +6,7 @@ error_reporting( ~E_DEPRECATED & ~E_NOTICE );
 define ('DBHOST', 'localhost');
 define('DBUSER', 'root');
 define('DBPASS', '');
-define ('DBNAME', 'ex_day5');
+define ('DBNAME', 'cr11_brandonlandrumjeffries_petadoption');
 
 $conn = mysqli_connect(DBHOST,DBUSER,DBPASS,DBNAME);
 

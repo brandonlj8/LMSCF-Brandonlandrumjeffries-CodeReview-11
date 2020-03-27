@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Mar 27, 2020 at 09:12 PM
+-- Generation Time: Mar 27, 2020 at 09:40 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.28
 
@@ -19,10 +19,8 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `ex_day5`
+-- Database: `cr11_brandonlandrumjeffries_petadoption`
 --
-CREATE DATABASE IF NOT EXISTS `ex_day5` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `ex_day5`;
 
 -- --------------------------------------------------------
 
@@ -60,8 +58,7 @@ INSERT INTO `animal` (`id`, `name`, `age`, `img`, `description`, `address`, `hob
 (11, 'Dog', 11, 'https://cdn.pixabay.com/photo/2014/08/21/14/51/pet-423398__480.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, debitis sed neque rerum magnam facere ipsum, non dolorem harum ad, saepe nihil', '145 Ring Road', 'Fetch', 'https://en.wikipedia.org/wiki/Animal', '2020-03-10', 'small, senior', NULL),
 (12, 'Sealion', 25, 'https://cdn.pixabay.com/photo/2020/03/11/21/06/seal-4923333__480.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, debitis sed neque rerum magnam facere ipsum, non dolorem harum ad, saepe nihil', '145 Ring Road', 'Eating fish', 'https://en.wikipedia.org/wiki/Animal', '2020-03-11', 'large, senior', NULL),
 (13, 'Owl', 7, 'https://cdn.pixabay.com/photo/2017/01/26/11/17/european-eagle-owl-2010346__480.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, debitis sed neque rerum magnam facere ipsum, non dolorem harum ad, saepe nihil', '145 Ring Road', 'observing', 'https://en.wikipedia.org/wiki/Animal', '2020-03-12', 'small', NULL),
-(14, 'Koala', 10, 'https://cdn.pixabay.com/photo/2011/09/28/23/19/koala-bear-9960__480.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, debitis sed neque rerum magnam facere ipsum, non dolorem harum ad, saepe nihil', '145 Ring Road', 'Climbing ', 'https://en.wikipedia.org/wiki/Animal', '2020-03-13', 'small, senior', NULL),
-(15, 'fdsasfd', 11, 'fasdf', 'asfds', 'afdsadf', 'asfd', 'asfd', '2020-03-11', 'afdsaf', NULL);
+(14, 'Koala', 10, 'https://cdn.pixabay.com/photo/2011/09/28/23/19/koala-bear-9960__480.jpg', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas, debitis sed neque rerum magnam facere ipsum, non dolorem harum ad, saepe nihil', '145 Ring Road', 'Climbing ', 'https://en.wikipedia.org/wiki/Animal', '2020-03-13', 'small, senior', NULL);
 
 -- --------------------------------------------------------
 
@@ -120,16 +117,6 @@ ALTER TABLE `animal`
 --
 ALTER TABLE `users`
   MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
-
---
--- Constraints for dumped tables
---
-
---
--- Constraints for table `animal`
---
-ALTER TABLE `animal`
-  ADD CONSTRAINT `animal_ibfk_1` FOREIGN KEY (`fk_id`) REFERENCES `location` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
