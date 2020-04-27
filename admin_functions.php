@@ -40,7 +40,7 @@ if (isset($_POST['update'])){
 
 }
 
-//update shit
+
 
 if (isset($_GET['deleteone'])){
     $id = $_GET['deleteone'];
